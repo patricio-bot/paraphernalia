@@ -38,3 +38,7 @@ Since the new version of React does not refresh the browser, I had to revert to 
 "react-dom": "^17.0.1",
 "react-scripts": "4.0.1",
 ```
+
+## Deploy
+
+[paraphernalia](https://paraphernalia.netlify.app/)
