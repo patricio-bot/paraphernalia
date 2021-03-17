@@ -18,6 +18,8 @@ import CartContent from './CarContent'
 import PageHero from './PageHero'
 import Product from './Product'
 import Submenu from './Submenu'
+import StripeCheckout from './StripeCheckout'
+import CartIsEmpty from './CartIsEmpty'
 
 export {
   FeaturedProducts,
@@ -39,5 +41,7 @@ export {
   CartContent,
   PageHero,
   Product,
-  Submenu
+  Submenu,
+  StripeCheckout,
+  CartIsEmpty
 }

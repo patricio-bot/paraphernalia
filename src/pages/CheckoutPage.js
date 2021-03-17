@@ -1,21 +1,20 @@
 import React from 'react'
-import styled from 'styled-components'
-import { PageHero } from '../components'
+import { PageHero, StripeCheckout, CartIsEmpty } from '../components'
+import { useCartContext } from '../context/cart_context'
+import { useProductsContext } from '../context/products_context'
+
+
 const CheckoutPage = () => {
+  const { cart } = useCartContext()
+  const { closeSubmenu } = useProductsContext()
   return (
-    <main>
+    <main onMouseOver={closeSubmenu} >
       <PageHero title='checkout' />
-      {/*   <div className="wrapper">
-        <div className="main">
-         
-        </div>
-      </div> */}
-      <Wrapper className='page' >
-        <h1>checkout here</h1>
-      </Wrapper>
+
+      {cart.length < 1 ? <CartIsEmpty /> : <StripeCheckout />}
 
     </main>
   )
 }
-const Wrapper = styled.div``
+
 export default CheckoutPage
