@@ -16,7 +16,7 @@ const CheckoutForm = () => {
   const { cart, total_amount, shipping_fee, clearCart } = useCartContext()
   const { user } = useUserContext()
   const history = useHistory()
-  console.log(user);
+
   //STRIPE
   const [succeeded, setSucceeded] = useState(false)
   const [error, setError] = useState(null)
@@ -98,7 +98,7 @@ const CheckoutForm = () => {
     <div>
       {
         succeeded ?
-          <article>
+          <article className='success-msg'>
             <GiCheckMark />
             <h4>Thank you</h4>
             <h4>Your payment was successful!</h4>
@@ -205,7 +205,22 @@ input {
 #payment-request-button {
   margin-bottom: 32px;
 }
-
+.success-msg{
+ display:flex;
+ flex-direction:column;
+ h4{
+   align-self:flex-start;
+ }
+  svg{
+    align-self:center;
+    color:green;
+    font-size:3rem;
+    border:1px solid green;
+    border-radius:50%;
+    padding:0.5rem;
+    margin-bottom:1rem;
+  }
+}
 /* Buttons and links */
 button {
   background: #5469d4;
