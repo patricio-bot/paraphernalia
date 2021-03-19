@@ -3,14 +3,14 @@ import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
 export const CartIsEmpty = () => {
-    return (
-        <Wrapper className='page-100'>
-            <div className="empty">
-                <h2>It seems you are in need of <span>paraphernalia</span> </h2>
-                <Link to='/products' className='btn'>fill it</Link>
-            </div>
-        </Wrapper>
-    )
+  return (
+    <Wrapper className='page-100'>
+      <div className="empty">
+        <h2>Looks like your space needs <span>paraphernalia</span> </h2>
+        <Link to='/products' className='btn'>fill it</Link>
+      </div>
+    </Wrapper>
+  )
 }
 
 const Wrapper = styled.main`
