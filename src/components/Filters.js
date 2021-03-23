@@ -141,7 +141,7 @@ const Wrapper = styled.section`
  justify-content:center;
  align-items:center;
   position:fixed;
-  top:0;
+  top:2rem;
   left:0;
    z-index:-1;
   visibility:hidden;
@@ -157,7 +157,7 @@ const Wrapper = styled.section`
 }
 .form-container{
   background:#fff;
-  width:90vw;
+  width:100vw;
   height:auto;
   max-width:var(--fixed-width);
   border-radius:var(--radius);
