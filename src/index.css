@@ -251,10 +251,6 @@ p {
   height: 100vh;
   background: var(--clr-white);
   transition: var(--transition);
-  background-image: url(assets/chairBG.png);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: center 80%;
   overflow: auto;
   text-align: center;
   z-index: 9999;
