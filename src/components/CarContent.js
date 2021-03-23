@@ -49,5 +49,6 @@ const Wrapper = styled.section`
   .clear-btn {
     background: var(--clr-black);
   }
+ 
 `
 export default CartContent

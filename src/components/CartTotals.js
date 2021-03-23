@@ -29,9 +29,11 @@ const CartTotals = () => {
 }
 
 const Wrapper = styled.section`
-  margin-top: 3rem;
+  
   display: flex;
   justify-content: center;
+  width:90%;
+  margin:3rem auto;
   article {
     border: 1px solid var(--clr-grey-8);
     border-radius: var(--radius);
@@ -51,6 +53,7 @@ const Wrapper = styled.section`
   }
   @media (min-width: 776px) {
     justify-content: flex-end;
+    width:100%;
   }
   .btn {
     width: 100%;
